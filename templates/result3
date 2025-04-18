@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>You are</title>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+
+
+        /* Lava Lamp Background */
+        body {
+            margin: 3rem 5rem;;
+            min-height: 100vh;
+            background: #D8EAE2;
+            position: relative;
+            overflow: auto;
+        }
+
+
+        /* Content Styling */
+        .content {
+            position: relative;
+            z-index: 1;
+            padding: 3rem;
+        }
+
+        .groovy-title {
+          font-family: 'Doom', Impact, sans-serif;
+          font-size: 4rem;
+          color: #318963; /* Bronze */
+          text-shadow:
+              3px 3px 0 #2d1b00,
+              -1px -1px 0 #ffd700; /* Glow */
+          letter-spacing: -2px;
+          transform: skew(-5deg);
+        }
+
+        .arcade-text {
+            font-family: 'Press Start 2P', cursive;
+            color: green;
+            font-size: 1rem;
+            line-height: 1.5;
+            max-width: 600px;
+            margin: 2rem 0;
+        }
+
+        /* Pulsing Animation */
+
+      @keyframes pulse {
+          0% { transform: scale(1); }
+          50% { transform: scale(1.05); }
+          100% { transform: scale(1); }
+      }
+
+      .groovy-title {
+          animation: pulse 2s infinite;
+
+    </style>
+</head>
+<body>
+    <h1 class = "groovy-text">Ambie</h1>
+    <img src="{{ url_for('static', filename='ambie.jpg') }}"
+         alt="Mathematical Result Visualization"
+         width="400">
+    <br>
+    <a href="/" class = "arcade-text">NO I AINT</a>
+</body>
+</html>
