@@ -1,0 +1,152 @@
+<!-- templates/form.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <Title class="groovy-title">Which King Gizzard Member are you?</Title>
+      <!-- Load 70s Fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+
+      <style>
+          /* Lava Lamp Background */
+          body {
+              mmargin: 3rem 5rem;
+              min-height: 100vh;
+              background: #D8EAE2;
+              position: relative;
+              overflow: auto;
+          }
+
+
+          /* Content Styling */
+          .content {
+              position: relative;
+              z-index: 1;
+              padding: 2rem;
+          }
+
+          .groovy-title {
+            font-family: 'Doom', Impact, sans-serif;
+            font-size: 4rem;
+            color: #318963; /* Bronze */
+            text-shadow:
+                3px 3px 0 #2d1b00,
+                -1px -1px 0 #ffd700; /* Glow */
+            letter-spacing: -2px;
+            transform: skew(-5deg);
+          }
+
+          .arcade-text {
+              font-family: 'Press Start 2P', cursive;
+              color: green;
+              font-size: 1rem;
+              line-height: 1.5;
+              max-width: 600px;
+              margin: 2rem 0;
+          }
+
+          /* Pulsing Animation */
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .groovy-title {
+            animation: pulse 2s infinite;
+         h1, h2, h3 {
+            text-align: center;
+        }
+    }
+
+      </style>
+</head>
+
+<body>
+    <div class="lava-lamp"></div>
+    <div class="content">
+    <h3 class="groovy-title" style=" font-size: 6rem;
+    text-align: center;">Which member of King Gizzzard are you?</h3>
+    <h1 class="groovy-title">What's your preferred style of music?</h1>
+    <form method="POST">
+        <!-- Radio buttons for operation choice -->
+        <div>
+            <input type="radio" name="question1" value="one" required>  <h1 class="arcade-text">Prog</h1>
+            <input type="radio" name="question1" value="two"> <p class="arcade-text">Indie</p>
+            <input type="radio" name="question1" value="three"> <p class="arcade-text">Hip hop</p>
+            <input type="radio" name="question1" value="four"> <p class="arcade-text">Techno</p>
+        </div>
+        <h1 class="groovy-title">What would you rather do on a Friday night?</h1>
+    <form method="POST">
+            <!-- Radio buttons for operation choice -->
+        <div>
+            <input type="radio" name="question2" value="one" required> <p class="arcade-text">Compose a symphony in Eb minor with cuttlery samples</p>
+        </div>
+        <div>
+            <input type="radio" name="question2" value="two"> <p class="arcade-text">Smoke a joint with my cow</p>
+        </div>
+        <div>
+            <input type="radio" name="question2" value="three">  <p class="arcade-text">Deadstick and break an arm</p>
+        </div>
+        <div>
+            <input type="radio" name="question2" value="four">  <p class="arcade-text">Be emo, cool, and sexy</p>
+        </div>
+        <h1 class="groovy-title">What's your opinion on the Beach Boys?</h1>
+        <form method="POST">
+                <!-- Radio buttons for operation choice -->
+            <div>
+                <input type="radio" name="question3" value="one" required>  <p class="arcade-text" style="color: #ff00ff;">Geniuses of harmony</p>
+                <input type="radio" name="question3" value="two">  <p class="arcade-text" style="color: #ff00ff;">My favourite vegetable</p>
+                <input type="radio" name="question3" value="three">  <p class="arcade-text" style="color: #ff00ff;">Meh</p>
+                <input type="radio" name="question3" value="four">  <p class="arcade-text" style="color: #ff00ff;"> The Synth's in Surf's up! </p>
+            </div>
+        <h1 class="groovy-title">What would you do if you were the pilot of b741?</h1>
+
+        <form method="POST">
+                    <!-- Radio buttons for operation choice -->
+            <div>
+                <input type="radio" name="question4" value="one" required>  <p class="arcade-text" style="color: #ff00ff;">Read so much about aviation you would be awarded an honorary aerospace engeneering degree</p>
+                <input type="radio" name="question4" value="two">  <p class="arcade-text" style="color: #ff00ff;">Smoke a joint and listen to Miles Davis</p>
+                <input type="radio" name="question4" value="three">  <p class="arcade-text" style="color: #ff00ff;">Deadstick</p>
+                <input type="radio" name="question4" value="four">  <p class="arcade-text" style="color: #ff00ff;">RAVE</p>
+            </div>
+
+         <h1 class="groovy-title">What would you do if you were stranded on Phantom Island?</h1>
+
+         <form method="POST">
+                        <!-- Radio buttons for operation choice -->
+            <div>
+                <input type="radio" name="question5" value="one" required>  <p class="arcade-text" style="color: #ff00ff;">Build a Cathedral</p>
+                <input type="radio" name="question5" value="two">  <p class="arcade-text" style="color: #ff00ff;">Walk up sideways like a snake on a sand dune</p>
+                <input type="radio" name="question5" value="three"> <p class="arcade-text" style="color: #ff00ff;"> Sing for rescue while naked</p>
+                <input type="radio" name="question5" value="four">  <p class="arcade-text" style="color: #ff00ff;">FIND ME A LAPTOP</p>
+            </div>
+         <h1 class="groovy-title">What drug do you prefer?</h1>
+
+         <form method="POST">
+                           <!-- Radio buttons for operation choice -->
+            <div>
+                <input type="radio" name="question6" value="one" required>  <p class="arcade-text" style="color: #ff00ff;">Mushrooms</p>
+                <input type="radio" name="question6" value="two"> <p class="arcade-text" style="color: #ff00ff;"> Recangular pieces of paper</p>
+                <input type="radio" name="question6" value="three"> <p class="arcade-text" style="color: #ff00ff;">Weed</p>
+                <input type="radio" name="question6" value="four">  <p class="arcade-text" style="color: #ff00ff;">Speed</p>
+            </div>
+
+        <h1 class="groovy-title">How would you describe yourself?</h1>
+
+            <form method="POST">
+                              <!-- Radio buttons for operation choice -->
+               <div>
+                   <input type="radio" name="question7" value="one" required>  <p class="arcade-text" style="color: #ff00ff;">Introverted and Obsessive</p>
+                   <input type="radio" name="question7" value="two">  <p class="arcade-text" style="color: #ff00ff;">Tough on the outside but soft on the inside</p>
+                   <input type="radio" name="question7" value="three">  <p class="arcade-text" style="color: #ff00ff;">Weird and extroverted</p>
+                   <input type="radio" name="question7" value="four">  <p class="arcade-text" style="color: #ff00ff;">Cleverly funny</p>
+               </div>
+
+
+        <button type="submit"><h1 class="arcade-text" >Calculate</h1></button>
+    </form>
+    </div>
+</body>
+</html>
