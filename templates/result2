@@ -62,6 +62,35 @@
          alt="Mathematical Result Visualization"
          width="400">
     <br>
+    <a class = "arcade-text" href= "{{ song }}" target="_blank">
+
+            A song you will probably like
+            </a>
+    <br>
+
     <a href="/" class = "arcade-text">NO I AINT</a>
+
+    <br>
+     <br>
+    <p class = "arcade-text"> You are:</p>
+    <br>
+    <p class="arcade-text">{{ ratio ['Stu']}} % a Stu</p>
+<p class="arcade-text">{{ ratio['Cookie'] }} % a Cookie</p>
+<p class="arcade-text">{{ ratio['Ambie'] }} % an Ambie</p>
+<p class="arcade-text">{{ ratio['Joey'] }} % a Joey</p>
+<br>
+    <br>
+    <a href="/" class = "groovy-title">NO I AINT</a>
+    <br>
+   <br>
+    <p class = "arcade-text"> Did you know that:</p>
+    <br>
+    <p class="arcade-text">{{ (stats['Stu'] / stats['All'] * 100) | round(0) }} % are Stus</p>
+<p class="arcade-text">{{ (stats['Cookie'] / stats['All'] * 100) | round(0) }} % are Cookies</p>
+<p class="arcade-text">{{ (stats['Ambie'] / stats['All'] * 100) | round(0) }} % are Ambies</p>
+<p class="arcade-text">{{ (stats['Joey'] / stats['All'] * 100) | round(0) }} % are Joeys</p>
+
+
+
 </body>
 </html>
