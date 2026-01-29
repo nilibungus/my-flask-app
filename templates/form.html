@@ -9,6 +9,205 @@
 
       <style>
           /* Lava Lamp Background */
+
+        @keyframes blobMove1 {
+  0% {
+    transform: translateY(0) scale(1,1);
+  }
+  12% {
+    transform: translateY(-500px) scale(1.1, 1);
+  }
+
+  25% {
+    transform: translateY(-1000px) scale(0.9, 1);
+  }
+  37% {
+    transform: translateY(-1500px) scale(1, 1);
+  }
+
+
+  50% {
+    transform: translateY(-2000px) scale(0.8, 1);
+  }
+  72% {
+    transform: translateY(-2500px) scale(0.6, 1.2);
+  }
+  85% {
+    transform: translateY(-3000px) scale(0.7, 1.1);
+  }
+  100% {
+    transform: translateY(-4000px) scale(1,1);
+  }
+}
+
+        .blob1 {
+            width: 70px;
+            height: 80px;
+            border-radius: 99% 99% 85% 85%;
+            background: radial-gradient(
+  circle at 40% 45%,
+  #ff77cc,
+  #cc0066
+);
+
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            animation: blobMove1 25s infinite;
+
+
+
+
+        }
+         @keyframes blobMove2 {
+  0% {
+    transform: translateY(0) scale(1,1);
+  }
+  12.5% {
+    transform: translateY(-460px) scale(1,1.1);
+  }
+
+  25% {
+    transform: translateY(-1243px) scale(1,0.9);
+  }
+  37.5% {
+    transform: translateY(-1700px) scale(1, 1);
+  }
+
+
+  50% {
+    transform: translateY(-2100px) scale(0.8, 1);
+  }
+  72.5% {
+    transform: translateY(-2610px) scale(0.6, 1.2);
+  }
+  85% {
+    transform: translateY(-2900px) scale(0.7, 1.1);
+  }
+  100% {
+    transform: translateY(-3800px) scale(1,1);
+  }
+}
+
+        .blob2 {
+            width: 100px;
+            height: 150px;
+            border-radius: 99% 99% 85% 85%;
+            background: radial-gradient(
+  circle at 40% 45%,
+  #ff77cc,
+  #cc0066
+);
+
+            position: absolute;
+            bottom: 0;
+            left: 70%;
+            animation: blobMove2 40s infinite;
+
+
+
+
+        }
+         @keyframes blobMove3 {
+  0% {
+    transform: translateY(0) scale(1,1);
+  }
+  12.5% {
+    transform: translateY(-590px) scale(1,1.1);
+  }
+
+  25% {
+    transform: translateY(-1145px) scale(1, 1);
+  }
+  37.5% {
+    transform: translateY(-1600px) scale(1.1, 1);
+  }
+
+
+  50% {
+    transform: translateY(-2200px) scale(0.8, 1);
+  }
+  72.5% {
+    transform: translateY(-2810px) scale(0.6, 1.2);
+  }
+  85% {
+    transform: translateY(-3100px) scale(0.7, 1.1);
+  }
+  100% {
+    transform: translateY(-3900px) scale(1,1);
+  }
+}
+
+        .blob3 {
+            width: 220px;
+            height: 260px;
+            border-radius: 90% 90% 75% 85%;
+            background: radial-gradient(
+  circle at 40% 45%,
+  #ff77cc,
+  #cc0066
+);
+
+            position: absolute;
+            bottom: 0;
+            left: 30%;
+            animation: blobMove3 50s infinite;
+
+
+
+
+        }
+             @keyframes blobMove4 {
+  0% {
+    transform: translateY(0) scale(1,1);
+  }
+  12.5% {
+    transform: translateY(-380px) scale(0.8 ,1.1);
+  }
+
+  25% {
+    transform: translateY(-1345px) scale(0.9, 1.1);
+  }
+  37.5% {
+    transform: translateY(-1900px) scale(1, 1);
+  }
+
+
+  50% {
+    transform: translateY(-2400px) scale(0.8, 1);
+  }
+  72.5% {
+    transform: translateY(-2710px) scale(0.6, 1.2);
+  }
+  85% {
+    transform: translateY(-3200px) scale(0.7, 1.1);
+  }
+  100% {
+    transform: translateY(-3800px) scale(1,1);
+  }
+}
+
+        .blob4 {
+            width: 80px;
+            height: 60px;
+            border-radius: 90% 90% 75% 85%;
+            background: radial-gradient(
+  circle at 40% 45%,
+  #ff77cc,
+  #cc0066
+);
+
+            position: absolute;
+            bottom: 0;
+            left: 20%;
+            animation: blobMove3 20s infinite;
+
+
+
+
+        }
+
+
           body {
               margin: 3rem 5rem;
               min-height: 100vh;
@@ -43,6 +242,7 @@
               line-height: 1.5;
               max-width: 600px;
               margin: 2rem 0;
+              margin-bottom: 20px;
           }
 
           /* Pulsing Animation */
@@ -62,7 +262,11 @@
 </head>
 
 <body>
-    <div class="lava-lamp"></div>
+
+    <div class="blob1"></div>
+    <div class="blob2"></div>
+    <div class="blob3"></div>
+    <div class="blob4"></div>
     <div class="content">
     <h3 class="groovy-title" style=" font-size: 6rem;
     text-align: center;">Which member of King Gizzzard are you?</h3>
@@ -70,63 +274,79 @@
     <form method="POST">
         <!-- Radio buttons for operation choice -->
         <div>
-          <label class="arcade-text">
-            <input type="radio" name="question1" value="one" required>
-            Prog
-          </label>
+
 
           <label class="arcade-text">
             <input type="radio" name="question1" value="two">
             Indie
           </label>
+          <br><br>
+          <label class="arcade-text">
+            <input type="radio" name="question1" value="one" required>
+            Prog
+          </label>
+          <br><br>
 
           <label class="arcade-text">
             <input type="radio" name="question1" value="three">
             Hip hop
           </label>
+          <br><br>
 
           <label class="arcade-text">
             <input type="radio" name="question1" value="four">
             Techno
           </label>
+
         </div>
 
         <h1 class="groovy-title">What would you rather do on a Friday night?</h1>
-   
+
             <!-- Radio buttons for operation choice -->
         <div>
             <label class="arcade-text">
                 <input type="radio" name="question2" value="one" required> Compose a symphony in Eb minor with cuttlery samples
             </label>
+            <br><br>
             <label class="arcade-text">
-       
-                <input type="radio" name="question2" value="two"> Hang out with my cow
-            </label>
-         <label class="arcade-text">
-            <input type="radio" name="question2" value="three"> Deadstick and break an arm
+            <input type="radio" name="question2" value="three"> Fly a plane
          </label>
+         <br><br>
+
+
         <label class="arcade-text">
             <input type="radio" name="question2" value="four"> Be emo and cool
         </label>
+        <br><br>
+              <label class="arcade-text">
+
+                <input type="radio" name="question2" value="two"> Hang out with my cow
+            </label>
+
+
         </div>
 <h1 class="groovy-title">What's your opinion on the Beach Boys?</h1>
 <div>
-  <label class="arcade-text" style="color:#ff00ff;">
-    <input type="radio" name="question3" value="one" required>
-    Geniuses of harmony
-  </label>
-
-  <label class="arcade-text" style="color:#ff00ff;">
+     <label class="arcade-text">
     <input type="radio" name="question3" value="two">
     My favourite vegetable
   </label>
+  <br><br>
+  <label class="arcade-text">
+    <input type="radio" name="question3" value="one" required>
+    Geniuses of harmony
+  </label>
+  <br><br>
 
-  <label class="arcade-text" style="color:#ff00ff;">
+
+
+  <label class="arcade-text">
     <input type="radio" name="question3" value="three">
     Meh
   </label>
+  <br><br>
 
-  <label class="arcade-text" style="color:#ff00ff;">
+  <label class="arcade-text">
     <input type="radio" name="question3" value="four">
     The Synth's in Surf's up!
   </label>
@@ -135,97 +355,115 @@
 
 <h1 class="groovy-title">What would you do if you were the pilot of b741?</h1>
 <div>
-  <label class="arcade-text" style="color:#ff00ff;">
+
+      <label class="arcade-text">
+    <input type="radio" name="question4" value="four">
+    RAVE
+  </label>
+  <br><br>
+  <label class="arcade-text">
     <input type="radio" name="question4" value="one" required>
     Read so much about aviation you would be awarded an honorary aerospace engineering degree
   </label>
+  <br><br>
 
-  <label class="arcade-text" style="color:#ff00ff;">
+  <label class="arcade-text">
+    <input type="radio" name="question4" value="three">
+    Deadstick
+  </label>
+  <br><br>
+
+  <label class="arcade-text">
     <input type="radio" name="question4" value="two">
     Chill out and listen to Miles Davis
   </label>
 
-  <label class="arcade-text" style="color:#ff00ff;">
-    <input type="radio" name="question4" value="three">
-    Deadstick
-  </label>
 
-  <label class="arcade-text" style="color:#ff00ff;">
-    <input type="radio" name="question4" value="four">
-    RAVE
-  </label>
 </div>
 
 
 <h1 class="groovy-title">What would you do if you were stranded on Phantom Island?</h1>
 <div>
-  <label class="arcade-text" style="color:#ff00ff;">
+    <label class="arcade-text">
+    <input type="radio" name="question5" value="two">
+    Walk sideways like a snake on a sand dune
+  </label>
+  <br><br>
+  <label class="arcade-text">
     <input type="radio" name="question5" value="one" required>
     Build a Cathedral
   </label>
+  <br><br>
 
-  <label class="arcade-text" style="color:#ff00ff;">
-    <input type="radio" name="question5" value="two">
-    Walk up sideways like a snake on a sand dune
-  </label>
-
-  <label class="arcade-text" style="color:#ff00ff;">
+  <label class="arcade-text">
     <input type="radio" name="question5" value="three">
-    Sing for rescue while naked
+    Sing for rescue
   </label>
+  <br><br>
 
-  <label class="arcade-text" style="color:#ff00ff;">
+  <label class="arcade-text">
     <input type="radio" name="question5" value="four">
     FIND ME A LAPTOP
   </label>
 </div>
 
 
-<h1 class="groovy-title">What drug do you prefer?</h1>
+<h1 class="groovy-title">Which one do you prefer?</h1>
 <div>
-  <label class="arcade-text" style="color:#ff00ff;">
+     <label class="arcade-text">
+    <input type="radio" name="question6" value="four">
+    Ice
+  </label>
+  <br> <br>
+  <label class="arcade-text">
+    <input type="radio" name="question6" value="two">
+    DEATH
+  </label>
+  <br><br>
+    <label class="arcade-text">
+    <input type="radio" name="question6" value="three">
+    Planets
+  </label>
+  <br><br>
+  <label class="arcade-text">
     <input type="radio" name="question6" value="one" required>
     Mushrooms
   </label>
 
-  <label class="arcade-text" style="color:#ff00ff;">
-    <input type="radio" name="question6" value="two">
-    Rectangular pieces of paper
-  </label>
 
-  <label class="arcade-text" style="color:#ff00ff;">
-    <input type="radio" name="question6" value="three">
-    Weed
-  </label>
 
-  <label class="arcade-text" style="color:#ff00ff;">
-    <input type="radio" name="question6" value="four">
-    Speed
-  </label>
+
+
+
+
 </div>
 
 
 <h1 class="groovy-title">How would you describe yourself?</h1>
 <div>
-  <label class="arcade-text" style="color:#ff00ff;">
+  <label class="arcade-text">
     <input type="radio" name="question7" value="one" required>
     Introverted and Obsessive
   </label>
+  <br><br>
 
-  <label class="arcade-text" style="color:#ff00ff;">
+  <label class="arcade-text">
     <input type="radio" name="question7" value="two">
     Tough on the outside but soft on the inside
   </label>
+  <br><br>
 
-  <label class="arcade-text" style="color:#ff00ff;">
+  <label class="arcade-text">
     <input type="radio" name="question7" value="three">
     Weird and extroverted
   </label>
+  <br><br>
 
-  <label class="arcade-text" style="color:#ff00ff;">
+  <label class="arcade-text">
     <input type="radio" name="question7" value="four">
     Cleverly funny
   </label>
+
 </div>
 
 
